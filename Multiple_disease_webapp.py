@@ -12,11 +12,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/chitransh/Desktop/Multiple Disease Prediction System(1)/Trained_model_2/diabetes_model.sav','rb'))
+diabetes_model = pickle.load(open('Trained_model_2/diabetes_model.sav','rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/chitransh/Desktop/Multiple Disease Prediction System(1)/Trained_model_2/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('Trained_model_2/heart_disease_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/chitransh/Desktop/Multiple Disease Prediction System(1)/Trained_model_2/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('Trained_model_2/parkinsons_model.sav', 'rb'))
 
 
 
@@ -33,7 +33,7 @@ with st.sidebar:
     
     
 # Diabetes Prediction Page
-if (selected == 'Diabetes Prediction'):
+if selected == 'Diabetes Prediction':
     
     # page title
     st.title('Diabetes Prediction using ML')
@@ -86,7 +86,7 @@ if (selected == 'Diabetes Prediction'):
 
 
 # Heart Disease Prediction Page
-if (selected == 'Heart Disease Prediction'):
+if selected == 'Heart Disease Prediction':
     
     # page title
     st.title('Heart Disease Prediction using ML')
@@ -154,7 +154,7 @@ if (selected == 'Heart Disease Prediction'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Parkinsons Prediction"):
+if selected == "Parkinsons Prediction":
     
     # page title
     st.title("Parkinson's Disease Prediction using ML")
